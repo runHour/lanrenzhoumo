@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CatagroyButton">
+            <rect key="frame" x="0.0" y="0.0" width="163" height="51"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JUSTIFY_ALL_136px_1162348_easyicon.net" translatesAutoresizingMaskIntoConstraints="NO" id="ohn-D5-N2e">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="Vbd-KI-G0g"/>
+                        <constraint firstAttribute="height" constant="25" id="jho-bJ-l5J"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="文艺生活" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6O-0d-r5A">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="0JA-xe-NOF"/>
+                        <constraint firstAttribute="width" constant="70" id="nEm-fy-sBv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ohn-D5-N2e" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="8a8-59-e02"/>
+                <constraint firstItem="ohn-D5-N2e" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="N2u-tU-M3p"/>
+                <constraint firstItem="i6O-0d-r5A" firstAttribute="leading" secondItem="ohn-D5-N2e" secondAttribute="trailing" constant="2" id="P7R-S1-h3u"/>
+                <constraint firstItem="i6O-0d-r5A" firstAttribute="centerY" secondItem="ohn-D5-N2e" secondAttribute="centerY" id="dsk-hd-8wK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentLabel" destination="i6O-0d-r5A" id="YZ5-jq-tBd"/>
+                <outlet property="leftimg" destination="ohn-D5-N2e" id="AZ2-I8-OA8"/>
+            </connections>
+            <point key="canvasLocation" x="-86.5" y="-26.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="JUSTIFY_ALL_136px_1162348_easyicon.net" width="136" height="110"/>
+    </resources>
+</document>
